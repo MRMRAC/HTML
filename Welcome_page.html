@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta charset="utf-8">
+    <title>Welcome page!</title>
+    <style type="text/css">
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li a:hover {
+    background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);
+}
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(249, 249, 249);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.Register{
+    position: relative;
+    top: 6px;
+}
+.btn{
+            width: 90%;
+            height: 40px;
+            background: black;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            color:white;
+            font-weight: 500;
+            position: relative;
+            top: 4px;
+}
+        body{
+             background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);
+              display: flex; 
+            justify-content: center;
+            align-items: center; 
+            min-height: 100vh; 
+            background-attachment: fixed;
+        
+        }
+        .Anus{
+            font-size: 2em;
+            text-align: center;
+            color: rgb(48, 42, 42);
+        }
+        .Errr{
+            border: 4px red;
+            position: relative;
+            top: 15px;
+            color: red;
+        }
+        .Correct{
+            border: 4px green;
+            position: relative;
+            top: 15px;
+            color: rgb(6, 150, 6);
+        }
+        .freak{
+  margin: auto;
+  width: 90%;
+  border: 3px solid #8b0303;
+  padding: 65px; 
+  border-radius: 55px;
+  background: white;
+  justify-content: center;
+            align-items: center;
+        }
+        #fname{
+            padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  width: 90%;
+}
+.FUCK{
+color: #000;
+}
+.focus{
+    position:relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+}
+.Furry{
+  color: #000000;
+}
+        #lname{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  width: 90%;
+        }
+        input:focus{
+            background-color: lightblue;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="#news">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Login</a></li>
+            </ul>
+        </header>
+        <div class="focus">
+            <div class="freak" id="Frame">
+                <h2 class="Anus">Login<p3><img src="C:\Users\Игорь\Downloads\pix.gif" alt="WHO"></p3></h2>
+                <form>
+                    <input type="text" id="fname" name="fname" placeholder="Username" value="">
+                    <br>
+                    <input type="password" id="lname" name="lname" placeholder="Password" value="">
+                </form>
+                <div class="remem">
+                <a href="#1e11" class="Furry">Forgot password?</a>
+            </div>
+            <p class="UI"></p>
+            <div class="yui">
+                <button onclick="Overseer()" type="submit" class="btn">Login</button>
+                <p class="Register">Don't have any account? <a href="register.html" class="FUCK">Register</a></p>
+                <div><p class="Errr" id="ads"></p> <p class="Correct"></p> </div>
+            </div>
+            </div>
+        </div>
+        <script class="Omega">
+            let D_B=new Map();
+            D_B.set("John","31324");
+            let err="Wrong Username or password";
+            function Overseer(){
+                string=document.getElementById("fname").value;
+                Stringus=document.getElementById("lname").value;
+                if(D_B.has(string)){
+                    if(D_B.get(string)==Stringus){
+                    return true;         
+                    }
+                    else{
+                        document.getElementById("ads").innerHTML = err;
+                        return false;
+                    }       
+                }
+                else{  
+                    document.getElementById("ads").innerHTML = err;
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
